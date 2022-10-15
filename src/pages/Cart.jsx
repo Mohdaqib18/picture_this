@@ -30,7 +30,7 @@ function Cart() {
             {cartElements}
             <p className="total-cost">Total:{totalCostDisplay} </p>
             <div className="order-button">
-            {cartItems.length !== 0 ?<button onClick={handleButtonClick}>{buttonText}</button> : <p>You dont have any items in the cart</p>}
+            {cartItems.length !== 0 ?<button onClick={handleButtonClick}>{buttonText}</button> : <div><h4>Order Placed...No orders are pending</h4><p>Add items to your cart to place a new order</p></div>}
             </div>
         </main>
     )
